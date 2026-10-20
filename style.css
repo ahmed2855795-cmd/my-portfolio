@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.7;
+    text-align: center;
+}
+
+nav {
+    background: #123b68;
+    padding: 12px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    background: transparent;
+    margin: 5px 10px;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #2563eb;
+}
+
+h1 {
+    background: #123b68;
+    color: white;
+    padding: 35px 15px;
+    font-size: 36px;
+}
+
+h2 {
+    color: #123b68;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #123b68;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+section {
+    background: white;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    scroll-margin-top: 15px;
+}
+
+.skill,
+.project {
+    background: #eaf2ff;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #dbeafe;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#projects h2 {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#projects .project {
+    flex: 1 1 250px;
+    max-width: 400px;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    background: #123b68;
+    padding: 10px 18px;
+    margin: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+a:hover {
+    background: #2563eb;
+}
+
+nav a {
+    background: transparent;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+footer {
+    background: #123b68;
+    color: white;
+    padding: 18px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 4px;
+        padding: 8px;
+    }
+
+    section {
+        margin: 15px 10px;
+        padding: 20px 15px;
+    }
+
+    #projects .project {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
